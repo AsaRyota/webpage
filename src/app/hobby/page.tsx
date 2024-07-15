@@ -1,5 +1,7 @@
 import Link1 from "next/link";
 import Link2 from "next/link";
+import Link3 from "next/link";
+import Link4 from "next/link";
 const page = () => {
     return (
         <>
@@ -16,9 +18,9 @@ const page = () => {
           <span></span>
           <ul id="menu">
             <Link1 href="/home"><li>Home</li></Link1>
-            <a href="#about"><li>About</li></a>
-            <Link2 href="/hobby"><li>Hobby</li></Link2>
-            <a href="#contact"><li>Contact</li></a>
+            <Link2 href="/about"><li>About</li></Link2>
+            <Link3 href="/hobby"><li>Hobby</li></Link3>
+            <Link4 href="/contact"><li>Contact</li></Link4>
           </ul>
         </div>
       </nav>
