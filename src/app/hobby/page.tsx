@@ -2,6 +2,8 @@ import Link1 from "next/link";
 import Link2 from "next/link";
 import Link3 from "next/link";
 import Link4 from "next/link";
+import Image from "next/image";
+import { XImage, InstagramImage, FacebookImage} from './components/NextImage';
 const page = () => {
     return (
         <>
@@ -28,30 +30,52 @@ const page = () => {
         <h1>My Hobby</h1>
     </header>
     <main>
-        <section className="hobby">
+        <section className="hobby1">
             <h2>趣味1</h2>
             {/* <img src="hobby1.jpg" alt="趣味1の画像"> */}
             {/* <p>趣味1の説明文。ここには趣味の詳細やなぜそれを楽しんでいるかについて書きます。</p> */}
         </section>
-        <section className="hobby">
+        <section className="hobby2">
             <h2>趣味2</h2>
             {/* <img src="hobby2.jpg" alt="趣味2の画像"> */}
             {/* <p>趣味2の説明文。ここには趣味の詳細やなぜそれを楽しんでいるかについて書きます。</p> */}
         </section>
-        <section className="hobby">
+        <section className="hobby3">
             <h2>趣味3</h2>
             {/* <img src="hobby3.jpg" alt="趣味3の画像"> */}
             {/* <p>趣味3の説明文。ここには趣味の詳細やなぜそれを楽しんでいるかについて書きます。</p> */}
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 My Hobby</p>
         <div className="social-media">
-            <a href="#">Twitter</a>
+            <ul>
+                <li>
+                <a href="https://x.com/" target="_blank">
+                <XImage />
+                </a>
+                </li>
+                <li>
+                <a href="https://facebook.com/" target="_blank">
+                <FacebookImage />
+                </a>
+                </li>
+                <li>
+                <a href="https://instagram.com/" target="_blank">
+                <InstagramImage />
+                </a>
+                </li>
+            </ul>
+            {/* <a href="#">Twitter</a>
             <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
+            <a href="#">Instagram</a> */}
         </div>
+        <a className="pagetop" href="#"><div className="pagetop__arrow"></div></a>
     </footer>
+    
+
+
     </body>
         </>
     );
